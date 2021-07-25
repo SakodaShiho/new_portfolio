@@ -1,0 +1,362 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 2px;
+  line-height: normal;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+section {
+  margin: 8rem 0;
+}
+.container {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.ttl {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+}
+.ttl:before {
+  content: '';
+  height: 1px;
+  background: #000;
+  margin-right: 0.5em;
+  padding-left: 7.5rem;
+}
+.ttl h2 span {
+  font-size: 0.7rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 100;
+}
+.ttl2 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+p {
+  font-size: 0.9rem;
+  line-height: 30px;
+}
+.view_more {
+  color: #e8989b;
+  font-size: 1rem;
+  align-items: center;
+  display: flex;
+  width: 80%;
+  margin-top: 1rem;
+  float: right;
+}
+.view_more:before {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background: #e8989b;
+  margin-right: 0.4em;
+}
+.view_more a {
+  text-decoration: none;
+  color: #e8989b;
+  transition: 0.5s;
+}
+.view_more a:hover {
+  text-decoration: none;
+  color: #efb4b6;
+}
+
+/* mv */
+
+.mv {
+  height: 750px;
+  background-image: url('../img/mv_bg.png');
+  background-size: cover;
+  background-repeat: none;
+  position: relative;
+}
+
+.mv h1 {
+  position: absolute;
+  display: inline-block;
+  font-size: 5rem;
+  margin-left: 10rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 4px solid #000;
+  bottom: 12%;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  max-width: 1600px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 3;
+}
+header .logo {
+  font-size: 2rem;
+  margin-left: 4rem;
+}
+header .nav_pc {
+  margin-right: 4rem;
+}
+header .nav_pc ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 1.1rem;
+}
+header .nav_pc ul li:last-child {
+  margin-right: 0;
+}
+header .nav_pc ul li span {
+  display: inline-block;
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+/* link */
+.link_area {
+  position: fixed;
+  margin-left: 1rem;
+  bottom: 0;
+  max-width: 1600px;
+  height: auto;
+  z-index: 3;
+}
+.link_area_item {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  background-color: #000;
+  border-radius: 100%;
+  margin: 0.5rem;
+}
+.link_area_item .fab,
+.link_area_item img {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.link_area_item img {
+  width: 23px;
+  height: auto;
+}
+.link_area .border {
+  width: 1px;
+  height: 100px;
+  border-left: 1px solid #000;
+  margin: 0 auto;
+}
+
+/* profile */
+
+.pr_section {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.pr_section .pr_img {
+  position: relative;
+  z-index: 1;
+}
+.pr_section .pr_img:before {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 100%;
+  height: 100%;
+  background: #9c9797;
+  z-index: -1;
+}
+.pr_section .pr_text {
+  margin-left: 5rem;
+}
+.pr_section .pr_text h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* career */
+
+.career {
+  background-image: linear-gradient(90deg, #f2f2f2 80%, #fff 20%);
+  margin-top: -15rem;
+  padding: 15rem 0 5rem;
+}
+.cr_section {
+  display: flex;
+  margin-top: 5rem;
+}
+.cr_section .cr_item {
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  margin: 0 0.5rem;
+  padding: 1rem;
+}
+.cr_item img {
+  display: block;
+  margin: 0 auto;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+.cr_item_text {
+  min-height: 100px;
+}
+.cr_item .view_more {
+  text-align: right;
+}
+
+/* skills */
+
+.sk_section {
+  width: 80%;
+  margin: 5rem auto;
+}
+
+.skill-contents {
+  display: flex;
+  align-items: center;
+}
+.skill-name {
+  width: 30%;
+}
+.skillbar {
+  position: relative;
+  display: inline-block;
+  margin: 15px 0;
+  width: 100%;
+  background: #f2f2f2;
+  height: 30px;
+  border-radius: 3px;
+  width: 100%;
+}
+.skillbar-bar {
+  position: absolute;
+  margin-top: 0;
+  height: 30px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 30px;
+  line-height: 35px;
+  color: #ffffff;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* image_section */
+
+.image_bg {
+  background-image: url('../img/bg.png');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 463px;
+}
+
+/* works_cording */
+
+/* works_design */
+
+/* contact */
+
+.contact {
+  padding: 2rem 0;
+  width: 80%;
+  height: 638px;
+  margin: 0 auto;
+  background-image: url('../img/contact_bg.png');
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+.contact p {
+  margin: 3rem 0 4rem;
+}
+.form_area {
+  width: 60%;
+  margin: 3rem 0;
+}
+.form_area .form_area_item {
+  display: flex;
+  align-items: flex-start;
+  margin: 1.5rem 0;
+}
+.form_area .form_area_item label {
+  display: block;
+  width: 30%;
+  font-size: 0.9rem;
+}
+.form_area .form_area_item input,
+.form_area .form_area_item textarea {
+  width: 70%;
+  padding: 0.5rem;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  height: 25px;
+}
+.form_area .form_area_item textarea {
+  height: 100px;
+}
+.form_area .form_area_submit input {
+  display: block;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+/* footer */
+
+footer {
+  background-color: #d3d3d3;
+  height: 200px;
+  padding: 5rem 4rem 5rem 8rem;
+}
+.footer_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer_item .logo {
+  font-size: 2rem;
+}
+.footer_item .nav_pc ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 1.1rem;
+}
+.footer_item .nav_pc ul li:last-child {
+  margin-right: 0;
+}
+.footer_item .nav_pc ul li span {
+  display: inline-block;
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.copyright {
+  float: right;
+  margin-top: 5rem;
+}
