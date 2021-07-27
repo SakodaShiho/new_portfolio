@@ -9,6 +9,9 @@ body {
 section {
   margin: 8rem 0;
 }
+.bg_gray {
+  background-color: #f2f2f2;
+}
 .container {
   width: 80%;
   margin: 2rem auto;
@@ -45,7 +48,7 @@ p {
   font-size: 1rem;
   align-items: center;
   display: flex;
-  width: 80%;
+  width: 65%;
   margin-top: 1rem;
   float: right;
 }
@@ -207,6 +210,13 @@ header .nav_pc ul li span {
   margin: 0 0.5rem;
   padding: 1rem;
 }
+.cr_item:first-child {
+  margin-left: 0;
+}
+.cr_item:last-child {
+  margin-right: 0;
+}
+
 .cr_item img {
   display: block;
   margin: 0 auto;
@@ -273,8 +283,80 @@ header .nav_pc ul li span {
 
 /* works_cording */
 
+.works_cording .works_ttl {
+  position: relative;
+  padding: 2rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.works_ttl span {
+  position: relative;
+  z-index: 2;
+}
+
+.works_ttl:before {
+  width: 100%;
+  content: attr(data-en);
+  position: absolute;
+  color: #eaeaea;
+  font-size: 3rem;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cording_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cording_item_child {
+  width: 30%;
+  margin-top: 3rem;
+}
+.cording_item_child img {
+  width: 100%;
+  transition: 0.5s;
+}
+.cording_item_child a img:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=70);
+}
+.cording_item_child p {
+  margin-top: 0.5rem;
+}
+.cording_item_child p:nth-of-type(2) {
+  margin-bottom: 2rem;
+}
+
 /* works_design */
 
+.works_design {
+  padding: 4rem;
+}
+.works_design .works_ttl2 {
+  position: relative;
+  padding: 2rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.works_ttl2 span {
+  position: relative;
+  z-index: 2;
+}
+
+.works_ttl2:before {
+  width: 100%;
+  content: attr(data-en);
+  position: absolute;
+  color: #fff;
+  font-size: 3rem;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 /* contact */
 
 .contact {
