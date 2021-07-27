@@ -289,7 +289,7 @@ function chk_send ( )
 
 			<div class="container">
 				<p>内容をご確認の上、送信ボタンを押してください</p>
-				<form action="#" method="post" id="postForm" name="postForm" class="CMS-FORM">
+				<form action="confirm.php" method="post" id="postForm" name="postForm" class="CMS-FORM">
 					<input type="hidden" value="" name="todo"><?php echo $hide_post ?>
 					<div class="confirm-box">
                     <div class="form_area_item">
