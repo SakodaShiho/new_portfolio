@@ -182,7 +182,7 @@ function send_admin_mail ( $post )
 
 	$strBody = mb_convert_encoding ( $strBody, "SJIS", "AUTO" ) ;
 
-	$strTo = "shiho.s0322@gmail.com" ;
+	$strTo = "sawadasakura322@gmail.com" ;
 	$strFrom = "From: " . INFO_MAIL ;
 
 	$strBodyMng = $strBodyHead . $strBody ;
@@ -241,7 +241,7 @@ function chk_send ( )
 {
 	var form = document.postForm ;
 	form.todo.value = "send" ;
-	form.action = "confirm.php" ;
+	form.action = "./confirm.php" ;
 	form.submit ( ) ;
 }
 </script>
