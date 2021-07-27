@@ -68,6 +68,9 @@ p {
   text-decoration: none;
   color: #efb4b6;
 }
+.sp {
+  display: none;
+}
 
 /* mv */
 
@@ -75,7 +78,6 @@ p {
   height: 750px;
   background-image: url('../img/mv_bg.png');
   background-size: cover;
-  background-repeat: none;
   position: relative;
 }
 
@@ -285,7 +287,7 @@ header .nav_pc ul li span {
 
 .works_cording .works_ttl {
   position: relative;
-  padding: 2rem 0;
+  padding: 3rem 0;
   font-size: 1.2rem;
   text-align: center;
 }
@@ -301,7 +303,7 @@ header .nav_pc ul li span {
   position: absolute;
   color: #eaeaea;
   font-size: 3rem;
-  top: 25%;
+  top: 30%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -323,17 +325,24 @@ header .nav_pc ul li span {
   opacity: 0.6;
   filter: alpha(opacity=70);
 }
-.cording_item_child p {
+.cording_item_child p,
+.cording_item_child h3 {
   margin-top: 0.5rem;
 }
 .cording_item_child p:nth-of-type(2) {
   margin-bottom: 2rem;
+  min-height: 150px;
 }
 
 /* works_design */
 
 .works_design {
-  padding: 4rem;
+  padding: 6rem 0;
+}
+.works_design:after {
+  clear: both;
+  content: '';
+  display: block;
 }
 .works_design .works_ttl2 {
   position: relative;
@@ -341,12 +350,10 @@ header .nav_pc ul li span {
   font-size: 1.2rem;
   text-align: center;
 }
-
 .works_ttl2 span {
   position: relative;
   z-index: 2;
 }
-
 .works_ttl2:before {
   width: 100%;
   content: attr(data-en);
@@ -357,6 +364,42 @@ header .nav_pc ul li span {
   left: 50%;
   transform: translateX(-50%);
 }
+#container {
+  margin: 2rem auto;
+  padding-bottom: 10px;
+}
+.grid {
+  background: #fff;
+  float: left;
+  font-size: 0.8rem;
+  margin: 0.5rem;
+  min-height: 100px;
+  padding: 0.5rem;
+  width: 30%;
+  transition: top 1s ease, left 1s ease;
+}
+.grid h2 {
+  color: #e8989b;
+  display: block;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.grid .meta {
+  color: #777;
+  text-align: right;
+  margin-top: 0.5rem;
+}
+.grid .imgholder img {
+  background: #ccc;
+  display: block;
+  max-width: 100%;
+  transition: 0.5s;
+}
+.grid .imgholder a img:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=70);
+}
+
 /* contact */
 
 .contact {
@@ -405,6 +448,15 @@ header .nav_pc ul li span {
   margin: 0 auto;
   padding: 1rem;
   margin-top: 3rem;
+}
+.return_btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  width: auto;
+  margin: 2rem auto;
+  padding: 1rem;
 }
 
 /* footer */

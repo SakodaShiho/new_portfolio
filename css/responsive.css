@@ -1,0 +1,456 @@
+@media screen and (max-width: 980px) {
+  section {
+    margin: 4rem 0;
+  }
+  .container {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  .ttl {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+  }
+  .ttl:before {
+    content: '';
+    height: 1px;
+    background: #000;
+    margin-right: 0.5em;
+    padding-left: 2.5rem;
+  }
+  .ttl h2 span {
+    font-size: 0.7rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+  }
+  .ttl2 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+    line-height: 30px;
+  }
+  .view_more {
+    color: #e8989b;
+    font-size: 1rem;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    float: right;
+  }
+  .view_more:before {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background: #e8989b;
+    margin-right: 0.4em;
+  }
+  .view_more a {
+    text-decoration: none;
+    color: #e8989b;
+    transition: 0.5s;
+  }
+  .view_more a:hover {
+    text-decoration: none;
+    color: #efb4b6;
+  }
+  .sp {
+    display: block;
+  }
+
+  /* mv */
+
+  .mv {
+    height: 100vh;
+    background-image: url('../img/mv_bg.png');
+    background-size: cover;
+    position: relative;
+  }
+
+  .mv h1 {
+    position: absolute;
+    display: inline-block;
+    font-size: 7vw;
+    margin-left: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 4px solid #000;
+    bottom: 12%;
+  }
+
+  /* header */
+
+  header {
+    width: 100%;
+    max-width: 1600px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 3;
+  }
+  header .logo {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+  header .nav_pc {
+    display: none;
+  }
+  header .nav_pc ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 1.1rem;
+  }
+  header .nav_pc ul li:last-child {
+    margin-right: 0;
+  }
+  header .nav_pc ul li span {
+    display: inline-block;
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+  }
+
+  /* link */
+  .link_area {
+    display: none;
+  }
+
+  /* profile */
+
+  .pr_section {
+    display: block;
+    margin-top: 1rem;
+  }
+  .pr_section .pr_img {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+  }
+  .pr_section .pr_img img {
+    width: 100%;
+  }
+  .pr_section .pr_img:before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    background: #9c9797;
+    z-index: -1;
+  }
+  .pr_section .pr_text {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+  .pr_section .pr_text h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  /* career */
+
+  .career {
+    background-image: linear-gradient(90deg, #f2f2f2 80%, #fff 20%);
+    margin-top: -15rem;
+    padding: 15rem 0 5rem;
+  }
+  .career .container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .cr_section {
+    margin-top: 0.5rem;
+    padding: 0 1.8rem;
+    width: 100vw;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .cr_section::-webkit-scrollbar {
+    display: none;
+  }
+  .cr_section .cr_item {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    margin: 0 0.5rem;
+    padding: 1rem;
+  }
+  .cr_item:first-child {
+    margin-left: 0;
+  }
+  .cr_item:last-child {
+    margin-right: 0;
+  }
+
+  .cr_item img {
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    margin-bottom: 1rem;
+  }
+  .cr_item_text {
+    min-height: 160px;
+  }
+  .cr_item .view_more {
+    text-align: right;
+  }
+
+  /* skills */
+
+  .sk_section {
+    width: 80%;
+    margin: 5rem auto;
+  }
+
+  .skill-contents {
+    display: flex;
+    align-items: center;
+  }
+  .skill-name {
+    width: 30%;
+  }
+  .skillbar {
+    position: relative;
+    display: inline-block;
+    margin: 15px 0;
+    width: 100%;
+    background: #f2f2f2;
+    height: 30px;
+    border-radius: 3px;
+    width: 100%;
+  }
+  .skillbar-bar {
+    position: absolute;
+    margin-top: 0;
+    height: 30px;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  .skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 30px;
+    line-height: 35px;
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* image_section */
+
+  .image_bg {
+    height: 230px;
+    background-attachment: inherit;
+  }
+
+  /* works_cording */
+
+  .works_cording .works_ttl {
+    position: relative;
+    padding: 2rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .works_ttl span {
+    position: relative;
+    z-index: 2;
+    line-height: 1.5;
+  }
+
+  .works_ttl:before {
+    width: 100%;
+    content: attr(data-en);
+    position: absolute;
+    color: #eaeaea;
+    font-size: 2.3rem;
+    top: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .cording_item {
+    display: block;
+  }
+  .cording_item_child {
+    width: 100%;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .cording_item_child img {
+    width: 100%;
+    transition: 0.5s;
+  }
+  .cording_item_child a img:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=70);
+  }
+  .cording_item_child p,
+  .cording_item_child h3 {
+    margin-top: 0.5rem;
+  }
+  .cording_item_child p:nth-of-type(2) {
+    margin-bottom: 1rem;
+    min-height: 0px;
+  }
+  .cording_item_child .view_more:before {
+    margin-left: 40%;
+  }
+
+  /* works_design */
+
+  .works_design {
+    padding: 4rem 0;
+  }
+  .works_design:after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+  .works_design .works_ttl2 {
+    position: relative;
+    padding: 2rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .works_ttl2 span {
+    position: relative;
+    z-index: 2;
+  }
+  .works_ttl2:before {
+    width: 100%;
+    content: attr(data-en);
+    position: absolute;
+    color: #fff;
+    font-size: 2rem;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #container {
+    margin: 2rem auto;
+    padding-bottom: 10px;
+  }
+  .grid {
+    background: #fff;
+    float: left;
+    font-size: 0.8rem;
+    margin: 0.5rem;
+    min-height: 100px;
+    padding: 0.5rem;
+    width: 40%;
+    transition: top 1s ease, left 1s ease;
+  }
+  .grid h2 {
+    color: #e8989b;
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  .grid p {
+    font-size: 0.7rem;
+  }
+  .grid .meta {
+    color: #777;
+    text-align: right;
+    margin-top: 0.5rem;
+  }
+  .grid .imgholder img {
+    background: #ccc;
+    display: block;
+    max-width: 100%;
+    transition: 0.5s;
+  }
+  .grid .imgholder a img:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=70);
+  }
+
+  /* contact */
+
+  .contact {
+    padding: 2rem 0;
+    width: 90%;
+    margin: 0 auto;
+    background-image: url('../img/contact_bg.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .contact p {
+    margin: 1rem 0 4rem;
+  }
+  .form_area {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .form_area .form_area_item {
+    display: block;
+    margin: 1.5rem 0;
+  }
+  .form_area .form_area_item label {
+    display: block;
+    width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .form_area .form_area_item input,
+  .form_area .form_area_item textarea {
+    width: 90%;
+    padding: 0.5rem;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    height: 25px;
+  }
+  .form_area .form_area_item textarea {
+    height: 100px;
+  }
+  .form_area .form_area_submit input {
+    display: block;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+
+  /* footer */
+
+  footer {
+    background-color: #d3d3d3;
+    height: auto;
+    padding: 2rem 0;
+  }
+  .footer_item {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer_item .logo {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .footer_item .nav_pc ul {
+    display: none;
+  }
+
+  .copyright {
+    float: inherit;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .copyright p {
+    font-size: 0.8rem;
+    font-weight: 200;
+  }
+}
