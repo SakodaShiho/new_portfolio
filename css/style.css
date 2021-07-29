@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 2px;
@@ -37,20 +40,29 @@ section {
 }
 .ttl2 {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 p {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 30px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.5s;
+}
+a:hover {
+  color: #777;
 }
 .view_more {
   color: #e8989b;
   font-size: 1rem;
   align-items: center;
   display: flex;
-  width: 65%;
+  width: 80%;
   margin-top: 1rem;
   float: right;
+  font-weight: 900;
 }
 .view_more:before {
   content: '';
@@ -93,37 +105,60 @@ p {
 
 /* header */
 
-header {
+.site-header,
+.header-change {
   width: 100%;
   max-width: 1600px;
-  height: 100px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   z-index: 3;
 }
-header .logo {
+.site-header .logo {
   font-size: 2rem;
   margin-left: 4rem;
 }
-header .nav_pc {
+.site-header .nav_pc,
+.header-change .gnav {
   margin-right: 4rem;
 }
-header .nav_pc ul li {
+.site-header .nav_pc ul li,
+.header-change .gnav ul li {
   list-style: none;
   display: inline-block;
   font-size: 1rem;
   text-align: center;
   margin: 0 1.1rem;
 }
-header .nav_pc ul li:last-child {
+.site-header .nav_pc ul li:last-child,
+.header-change .gnav ul li:last-child {
   margin-right: 0;
 }
-header .nav_pc ul li span {
+.site-header .nav_pc ul li span,
+.header-change .gnav ul li span {
   display: inline-block;
   font-size: 0.7rem;
   margin-top: 0.5rem;
+}
+
+.menu {
+  display: none;
+}
+.header-change {
+  background: #fff;
+  opacity: 0.9;
+  transition: 0.5s;
+  top: -100px;
+  height: 80px;
+  z-index: 2;
+}
+.header-change.show {
+  top: 0;
+}
+.nav_sp {
+  display: none;
 }
 
 /* link */
@@ -142,6 +177,10 @@ header .nav_pc ul li span {
   background-color: #000;
   border-radius: 100%;
   margin: 0.5rem;
+  transition: 0.5s;
+}
+.link_area_item:hover {
+  background-color: #777;
 }
 .link_area_item .fab,
 .link_area_item img {
@@ -332,6 +371,9 @@ header .nav_pc ul li span {
 .cording_item_child p:nth-of-type(2) {
   margin-bottom: 2rem;
   min-height: 150px;
+}
+.cording_item_child .view_more:before {
+  margin-left: 30%;
 }
 
 /* works_design */

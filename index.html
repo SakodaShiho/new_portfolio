@@ -18,27 +18,60 @@
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-    <header>
+    <header class="site-header">
         <div class="logo">
             <h1>SHIHO SAKODA</h1>
         </div>
-        <div class="nav_pc">
+        <nav class="nav_pc">
             <ul>
-                <li>PROFILE<br><span>プロフィール</span></li>
-                <li>CAREER<br><span>職歴</span></li>
-                <li>SKILLS<br><span>スキル</span></li>
-                <li>WORKS<br><span>制作実績</span></li>
-                <li>CONTACT<br><span>お問い合わせ</span></li>
+                <a href="#profile">
+                    <li>PROFILE<br><span>プロフィール</span></li>
+                </a>
+                <a href="#career">
+                    <li>CAREER<br><span>職歴</span></li>
+                </a>
+                <a href="#skills">
+                    <li>SKILLS<br><span>スキル</span></li>
+                </a>
+                <a href="#works">
+                    <li>WORKS<br><span>制作実績</span></li>
+                </a>
+                <a href="#contact">
+                    <li>CONTACT<br><span>お問い合わせ</span></li>
+                </a>
+            </ul>
+        </nav>
+        <button type="button" class="menu-btn nav_sp">
+            <i class="fa fa-bars"></i>
+            <i class="fas fa-times hidden"></i>
+        </button>
+        <div class="menu">
+            <ul>
+                <a href="#profile">
+                    <li class="menu__item">PROFILE<br></li>
+                </a>
+                <a href="#career">
+                    <li class="menu__item">CAREER<br></li>
+                </a>
+                <a href="#skills">
+                    <li class="menu__item">SKILLS<br></li>
+                </a>
+                <a href="#works">
+                    <li class="menu__item">WORKS<br></li>
+                </a>
+                <a href="#contact">
+                    <li class="menu__item">CONTACT<br></li>
+                </a>
             </ul>
         </div>
     </header>
 
-    <div class="mv">
+    <div class="mv hero">
         <h1>SHIHO SAKODA</h1>
     </div>
 
@@ -57,7 +90,7 @@
 
 
     <main>
-        <section>
+        <section id="profile">
             <div class="ttl">
                 <h2>PROFILE<span>プロフィール</span></h2>
             </div>
@@ -76,17 +109,16 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
         <section class="career">
             <div class="ttl">
-                <h2>CAREER<span>職歴</span></h2>
+                <h2 id="career">CAREER<span>職歴</span></h2>
             </div>
             <div class="container">
                 <div class="cr_section">
                     <div class="cr_item">
-                        <img src="./img/career1.png">
+                        <img src="./img/career4.png">
                         <div class="cr_item_text">
                             <p>2021年3月～</p>
                             <p class="ttl2">WEB制作会社に就職</p>
@@ -96,7 +128,7 @@
                     </div>
 
                     <div class="cr_item">
-                        <img src="./img/career2.png">
+                        <img src="./img/career3.png">
                         <div class="cr_item_text">
                             <p>2016年3月～2021年3月</p>
                             <p class="ttl2">ブライダル企業に就職</p>
@@ -106,7 +138,7 @@
                     </div>
 
                     <div class="cr_item">
-                        <img src="./img/career3.png">
+                        <img src="./img/career2.png">
                         <div class="cr_item_text">
                             <p>2015年4月～2016年3月</p>
                             <p class="ttl2">歯科医院へ就職</p>
@@ -116,7 +148,7 @@
                     </div>
 
                     <div class="cr_item">
-                        <img src="./img/career4.png">
+                        <img src="./img/career1.png">
                         <div class="cr_item_text">
                             <p>2015年3月</p>
                             <p class="ttl2">短期大学卒業</p>
@@ -129,7 +161,7 @@
 
         </section>
 
-        <section>
+        <section id="skills">
             <div class="ttl">
                 <h2>SKILLS<span>スキル</span></h2>
             </div>
@@ -190,7 +222,7 @@
 
         <section class="image_bg"></section>
 
-        <section>
+        <section id="works">
             <div class="ttl">
                 <h2>WORKS<span>制作実績</span></h2>
             </div>
@@ -301,7 +333,7 @@
         </section>
 
 
-        <section>
+        <section id="contact">
             <div class="ttl">
                 <h2>CONTACT<span>お問い合わせ</span></h2>
             </div>
@@ -330,17 +362,27 @@
     </main>
 
     <footer>
-        <div class=" footer_item">
+        <div class="footer_item">
             <div class="logo">
                 <h1>SHIHO SAKODA</h1>
             </div>
             <div class="nav_pc">
                 <ul>
-                    <li>PROFILE<br><span>プロフィール</span></li>
-                    <li>CAREER<br><span>職歴</span></li>
-                    <li>SKILLS<br><span>スキル</span></li>
-                    <li>WORKS<br><span>制作実績</span></li>
-                    <li>CONTACT<br><span>お問い合わせ</span></li>
+                    <a href="#profile">
+                        <li>PROFILE<br><span>プロフィール</span></li>
+                    </a>
+                    <a href="#career">
+                        <li>CAREER<br><span>職歴</span></li>
+                    </a>
+                    <a href="#skills">
+                        <li>SKILLS<br><span>スキル</span></li>
+                    </a>
+                    <a href="#works">
+                        <li>WORKS<br><span>制作実績</span></li>
+                    </a>
+                    <a href="#contact">
+                        <li>CONTACT<br><span>お問い合わせ</span></li>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -348,6 +390,52 @@
             <p>&copy; 2021 SHIHO SAKODA</p>
         </div>
     </footer>
+
+    <div class="header-change">
+        <!-- <h1 class="logo">SHIHO SAKODA</h1>
+        <nav class="gnav">
+            <ul class="gnav__menu">
+                <a href="#profile">
+                    <li class="gnav__menu__item">PROFILE<br><span>プロフィール</span></li>
+                </a>
+                <a href="#career">
+                    <li class="gnav__menu__item">CAREER<br><span>職歴</span></li>
+                </a>
+                <a href="#skills">
+                    <li class="gnav__menu__item">SKILLS<br><span>スキル</span></li>
+                </a>
+                <a href="#works">
+                    <li class="gnav__menu__item">WORKS<br><span>制作実績</span></li>
+                </a>
+                <a href="#contact">
+                    <li class="gnav__menu__item">CONTACT<br><span>お問い合わせ</span></li>
+                </a>
+            </ul>
+        </nav>
+        <button type="button" class="menu-btn nav_sp">
+            <i class="fa fa-bars"></i>
+            <i class="fas fa-times hidden"></i>
+        </button>
+        <div class="menu">
+            <ul>
+                <a href="#profile">
+                    <li class="menu__item">PROFILE<br></li>
+                </a>
+                <a href="#career">
+                    <li class="menu__item">CAREER<br></li>
+                </a>
+                <a href="#skills">
+                    <li class="menu__item">SKILLS<br></li>
+                </a>
+                <a href="#works">
+                    <li class="menu__item">WORKS<br></li>
+                </a>
+                <a href="#contact">
+                    <li class="menu__item">CONTACT<br></li>
+                </a>
+            </ul>
+        </div> -->
+    </div>
 
     <script src="./js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="./js/skill.bars.jquery.js"></script>
