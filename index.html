@@ -341,20 +341,42 @@
                 <p>当ポートフォリオサイトにお越しいただき、誠にありがとうございます。<br>
                     何かございましたらお気軽にご連絡くださいませ。</p>
                 <div class="form_area">
-                    <form action="confirm.php" method="post" id="postForm" name="postForm">
+                    <form
+                        action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdGXQHI9_Rd2SpsTT-zLX4MK0F6HsJXXntTZFyWS6cUUtj39Q/formResponse"
+                        method="post" id="my-form" target="my-response-iframe">
                         <div class="form_area_item">
-                            <label for="name">お名前</label> <input id="name" type="text" name="name">
+                            <label for="name">お名前</label> <input id="name" type="text" name="entry.1684107769">
                         </div>
                         <div class="form_area_item">
-                            <label for="email">メールアドレス</label> <input id="email" type="email" name="email">
+                            <label for="email">メールアドレス</label> <input id="email" type="email" name="entry.711203998">
                         </div>
                         <div class="form_area_item">
-                            <label for="contents">お問い合わせ内容</label> <textarea id="contents" name="contents"></textarea>
+                            <label for="contents">お問い合わせ内容</label> <textarea id="contents"
+                                name="entry.1552435782"></textarea>
                         </div>
                         <div class="form_area_submit">
                             <input type="submit" value="送信" name="" class="submit_btn">
                         </div>
                     </form>
+                    <iframe id="my-response-iframe" name="my-response-iframe"></iframe>
+                    <script type="text/javascript">
+                        // set the target on the form to point to a hidden iframe
+                        // some browsers need the target set via JavaScript, no idea why...
+                        document.getElementById('my-form').target = 'my-response-iframe';
+                        // detect when the iframe reloads
+                        var iframe = document.getElementById('my-response-iframe');
+                        if (iframe) {
+                            iframe.onload = function () {
+                                // now you can do stuff, such as displaying a message or redirecting to a new page.
+                                $(".end-message").slideDown();
+                                $(".form-submit").fadeOut();
+                                // $(".false-message").slideDown();
+                            }
+                        }
+                    </script>
+                    <!-- 送信後メッセージ -->
+                    <p class="end-message">お問い合わせありがとうございました</p>
+                    <p class="false-message">送信失敗です</p>
                 </div>
             </div>
         </section>

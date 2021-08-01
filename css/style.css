@@ -490,6 +490,7 @@ a:hover {
   margin: 0 auto;
   padding: 1rem;
   margin-top: 3rem;
+  cursor: pointer;
 }
 .return_btn {
   display: inline-block;
@@ -499,6 +500,16 @@ a:hover {
   width: auto;
   margin: 2rem auto;
   padding: 1rem;
+}
+iframe {
+  visibility: hidden;
+  height: 1px;
+}
+.end-message {
+  display: none;
+}
+.false-message {
+  display: none;
 }
 
 /* footer */
