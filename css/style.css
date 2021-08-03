@@ -63,6 +63,7 @@ a:hover {
   margin-top: 1rem;
   float: right;
   font-weight: 900;
+  cursor: pointer;
 }
 .view_more:before {
   content: '';
@@ -250,6 +251,7 @@ a:hover {
   border: 1px solid #f2f2f2;
   margin: 0 0.5rem;
   padding: 1rem;
+  cursor: pointer;
 }
 .cr_item:first-child {
   margin-left: 0;
@@ -257,7 +259,6 @@ a:hover {
 .cr_item:last-child {
   margin-right: 0;
 }
-
 .cr_item img {
   display: block;
   margin: 0 auto;
@@ -269,6 +270,57 @@ a:hover {
 }
 .cr_item .view_more {
   text-align: right;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.no_scroll {
+  overflow: hidden;
+}
+.modal-window {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  min-height: 300px;
+  max-height: 520px;
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 11;
+  padding: 2rem;
+  overflow-y: scroll;
+}
+.button-close {
+  position: absolute;
+  right: 0;
+  transform: translate(-50%, -50%);
+  width: auto;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.modal-window h2 {
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+}
+.bold {
+  font-size: 1rem;
+  font-weight: 900;
+  background: linear-gradient(transparent 70%, #ecd6a5 0);
+  width: auto;
+}
+.bold2 {
+  font-weight: 600;
+  font-size: 0.83rem;
 }
 
 /* skills */

@@ -504,3 +504,12 @@
     font-weight: 200;
   }
 }
+
+@media (min-width: 980px) and (max-width: 1082px) {
+  .cr_item_text {
+    min-height: 150px;
+  }
+  .cr_item .view_more {
+    width: 100%;
+  }
+}
